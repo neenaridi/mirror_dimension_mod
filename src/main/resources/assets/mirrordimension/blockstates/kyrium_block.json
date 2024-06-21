@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mirrordimension:block/kyrium_block"
+    }
+  }
+}

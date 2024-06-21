@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "# #",
+    "# #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "mirrordimension:kyrium"
+    }
+  },
+  "result":{
+    "id": "mirrordimension:kyrium_boots"
+  }
+}
