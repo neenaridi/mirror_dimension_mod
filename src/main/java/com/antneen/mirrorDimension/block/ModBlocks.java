@@ -34,11 +34,19 @@ public class ModBlocks {
             .Properties.of()
             .mapColor(MapColor.STONE)
             .requiresCorrectToolForDrops()
-            .strength(4.0F, 4.0F)
+            .strength(3.0F, 4.0F)
             .sound(SoundType.AMETHYST),
             UniformInt.of(3, 7))
     );
 
+    public static final RegistryObject<Block> DEEPSLATE_KYRIUM_ORE = registerBlock("deepslate_kyrium_ore", () -> new DropExperienceBlock(BlockBehaviour
+            .Properties.of()
+            .mapColor(MapColor.DEEPSLATE)
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 5.0F)
+            .sound(SoundType.AMETHYST),
+            UniformInt.of(3, 7))
+    );
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
