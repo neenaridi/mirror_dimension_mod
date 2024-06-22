@@ -74,6 +74,7 @@ public class Mirror_Dimension {
             event.accept(ModItems.KYRIUM);
             event.accept(ModBlocks.KYRIUM_ORE);
             event.accept(ModBlocks.KYRIUM_BLOCK);
+            event.accept(ModBlocks.DEEPSLATE_KYRIUM_ORE);
         }
     }
 

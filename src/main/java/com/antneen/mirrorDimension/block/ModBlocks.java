@@ -24,29 +24,31 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Mirror_Dimension.MODID);
 
     public static final RegistryObject<Block> KYRIUM_BLOCK = registerBlock("kyrium_block", () -> new Block(
-                    BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.COLOR_PURPLE)
-                            .requiresCorrectToolForDrops()
-                            .strength(7.0F, 6.0F)
-                            .sound(SoundType.AMETHYST)));
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .requiresCorrectToolForDrops()
+                    .strength(7.0F, 6.0F)
+                    .sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> KYRIUM_ORE = registerBlock("kyrium_ore", () -> new DropExperienceBlock(BlockBehaviour
             .Properties.of()
             .mapColor(MapColor.STONE)
             .requiresCorrectToolForDrops()
-            .strength(3.0F, 4.0F)
+            .strength(7.0F, 4.0F)
             .sound(SoundType.AMETHYST),
             UniformInt.of(3, 7))
     );
 
-    public static final RegistryObject<Block> DEEPSLATE_KYRIUM_ORE = registerBlock("deepslate_kyrium_ore", () -> new DropExperienceBlock(BlockBehaviour
+    public static final RegistryObject<Block> DEEPSLATE_KYRIUM_ORE = registerBlock("deepslate_kyrium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour
             .Properties.of()
             .mapColor(MapColor.DEEPSLATE)
             .requiresCorrectToolForDrops()
-            .strength(4.0F, 5.0F)
+            .strength(9.0F, 4.0F)
             .sound(SoundType.AMETHYST),
             UniformInt.of(3, 7))
     );
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
