@@ -30,14 +30,15 @@ public class ModBlocks {
                             .strength(7.0F, 6.0F)
                             .sound(SoundType.AMETHYST)));
 
-    public static final RegistryObject<Block> KYRIUM_ORE = registerBlock("kyrium_ore", () -> new Block(
-                    BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.COLOR_PURPLE)
-                            .requiresCorrectToolForDrops()
-                            .strength(5.0F, 6.0F)
-                            .sound(SoundType.AMETHYST)
-            )
+    public static final RegistryObject<Block> KYRIUM_ORE = registerBlock("kyrium_ore", () -> new DropExperienceBlock(BlockBehaviour
+            .Properties.of()
+            .mapColor(MapColor.STONE)
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 4.0F)
+            .sound(SoundType.AMETHYST),
+            UniformInt.of(3, 7))
     );
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
