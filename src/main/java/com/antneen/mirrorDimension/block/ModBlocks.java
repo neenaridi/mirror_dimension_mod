@@ -24,11 +24,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Mirror_Dimension.MODID);
 
     public static final RegistryObject<Block> KYRIUM_BLOCK = registerBlock("kyrium_block", () -> new Block(
-                    BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.COLOR_PURPLE)
-                            .requiresCorrectToolForDrops()
-                            .strength(7.0F, 6.0F)
-                            .sound(SoundType.AMETHYST)));
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .requiresCorrectToolForDrops()
+                    .strength(7.0F, 6.0F)
+                    .sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> KYRIUM_ORE = registerBlock("kyrium_ore", () -> new DropExperienceBlock(BlockBehaviour
             .Properties.of()

@@ -7,9 +7,14 @@
 
   "creativetab.mirror_tab": "Mirror Dimension Tab",
 
-  "item.kyrium_axe": "Kyrium Axe",
-  "item.kyrium_pickaxe": "Kyrium Pickaxe",
-  "item.kyrium_shovel": "Kyrium Shovel",
-  "item.kyrium_hoe": "Kyrium Hoe",
-  "item.kyrium_sword": "Kyrium Sword"
+  "item.mirrordimension.kyrium_axe": "Kyrium Axe",
+  "item.mirrordimension.kyrium_pickaxe": "Kyrium Pickaxe",
+  "item.mirrordimension.kyrium_shovel": "Kyrium Shovel",
+  "item.mirrordimension.kyrium_hoe": "Kyrium Hoe",
+  "item.mirrordimension.kyrium_sword": "Kyrium Sword",
+
+  "item.mirrordimension.kyrium_helmet": "Kyrium Helmet",
+  "item.mirrordimension.kyrium_chestplate": "Kyrium Chestplate",
+  "item.mirrordimension.kyrium_leggings": "Kyrium Leggings",
+  "item.mirrordimension.kyrium_boots": "Kyrium Boots"
 }
