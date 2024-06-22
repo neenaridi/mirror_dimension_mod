@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.KYRIUM_ORE.get());
                         pOutput.accept(ModBlocks.KYRIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_KYRIUM_ORE.get());
                     })
                     .build());
 
