@@ -3,6 +3,13 @@
 
   "block.mirrordimension.kyrium_ore": "Kyrium Ore",
   "block.mirrordimension.kyrium_block": "Kyrium Block",
+  "block.mirrordimension.deepslate_kyrium_ore": "Deepslate Kyrium Ore",
 
-  "creativetab.mirror_tab": "Mirror Dimension Tab"
+  "creativetab.mirror_tab": "Mirror Dimension Tab",
+
+  "item.kyrium_axe": "Kyrium Axe",
+  "item.kyrium_pickaxe": "Kyrium Pickaxe",
+  "item.kyrium_shovel": "Kyrium Shovel",
+  "item.kyrium_hoe": "Kyrium Hoe",
+  "item.kyrium_sword": "Kyrium Sword"
 }
