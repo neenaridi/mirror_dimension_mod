@@ -13,15 +13,15 @@ public class ModItems {
     public static final RegistryObject<Item> KYRIUM = ITEMS.register("kyrium", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> KYRIUM_PICKAXE = ITEMS.register("kyrium_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.KYRIUM, 4, 1, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.KYRIUM, 1, 0, new Item.Properties()));
     public static final RegistryObject<Item> KYRIUM_SHOVEL = ITEMS.register("kyrium_shovel",
             () -> new ShovelItem(ModToolTiers.KYRIUM, 0, 0, new Item.Properties()));
     public static final RegistryObject<Item> KYRIUM_AXE = ITEMS.register("kyrium_axe",
-            () -> new AxeItem(ModToolTiers.KYRIUM, 6, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.KYRIUM, 5, 0, new Item.Properties()));
     public static final RegistryObject<Item> KYRIUM_HOE = ITEMS.register("kyrium_hoe",
             () -> new HoeItem(ModToolTiers.KYRIUM, 0, 0, new Item.Properties()));
     public static final RegistryObject<Item> KYRIUM_SWORD = ITEMS.register("kyrium_sword",
-            () -> new SwordItem(ModToolTiers.KYRIUM, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.KYRIUM, 3, 1, new Item.Properties()));
 
     // armor
 
