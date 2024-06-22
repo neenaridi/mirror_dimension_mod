@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kyrium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mirrordimension:kyrium_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mirrordimension:kyrium_from_smelting_kyrium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_kyrium_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mirrordimension:kyrium_from_smelting_kyrium_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}
