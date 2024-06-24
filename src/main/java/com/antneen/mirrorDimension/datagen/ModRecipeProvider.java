@@ -80,8 +80,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
                 .save(pWriter);
 
-        /* uncomment when armor is implemented
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KYRIUM_HELMET.get())
                 .pattern("###")
                 .pattern("# #")
                 .pattern("   ")
@@ -89,7 +88,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KYRIUM_CHESTPLATE.get())
                 .pattern("# #")
                 .pattern("###")
                 .pattern("###")
@@ -97,7 +96,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KYRIUM_LEGGINGS.get())
                 .pattern("###")
                 .pattern("# #")
                 .pattern("# #")
@@ -105,14 +104,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KYRIUM_BOOTS.get())
                 .pattern("# #")
                 .pattern("# #")
                 .pattern("   ")
                 .define('#', ModItems.KYRIUM.get())
                 .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
                 .save(pWriter);
-         */
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.KYRIUM.get(), 9)
                 .requires(ModBlocks.KYRIUM_BLOCK.get())
