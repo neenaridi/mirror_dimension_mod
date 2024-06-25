@@ -1,9 +1,11 @@
 package com.antneen.mirrorDimension.datagen;
 
 import com.antneen.mirrorDimension.Mirror_Dimension;
+import com.antneen.mirrorDimension.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -18,6 +20,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-
+        this.tag(ItemTags.TRIMMABLE_ARMOR).add(ModItems.KYRIUM_HELMET.get(), ModItems.KYRIUM_CHESTPLATE.get(), ModItems.KYRIUM_LEGGINGS.get(), ModItems.KYRIUM_BOOTS.get());
     }
 }

@@ -29,6 +29,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.KYRIUM_SHOVEL.get());
                         pOutput.accept(ModItems.KYRIUM_HOE.get());
                         pOutput.accept(ModItems.KYRIUM_SWORD.get());
+
+                        pOutput.accept(ModItems.KYRIUM_HELMET.get());
+                        pOutput.accept(ModItems.KYRIUM_CHESTPLATE.get());
+                        pOutput.accept(ModItems.KYRIUM_LEGGINGS.get());
+                        pOutput.accept(ModItems.KYRIUM_BOOTS.get());
                     })
                     .build());
 
