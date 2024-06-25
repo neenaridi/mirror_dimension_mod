@@ -5,6 +5,7 @@ import com.antneen.mirrorDimension.block.ModBlocks;
 import com.antneen.mirrorDimension.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -23,14 +24,91 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        oreSmelting(pWriter, KYRIUM_SMELTABLES, RecipeCategory.MISC, ModItems.KYRIUM.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, KYRIUM_SMELTABLES, RecipeCategory.MISC, ModItems.KYRIUM.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, KYRIUM_SMELTABLES, RecipeCategory.MISC, ModItems.KYRIUM.get(), 0.25f, 200, "kyrium");
+        oreBlasting(pWriter, KYRIUM_SMELTABLES, RecipeCategory.MISC, ModItems.KYRIUM.get(), 0.25f, 100, "kyrium");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.KYRIUM_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
                 .define('S', ModItems.KYRIUM.get())
+                .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_PICKAXE.get())
+                        .pattern("###")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .define('#', ModItems.KYRIUM.get())
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                        .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_AXE.get())
+                .pattern("## ")
+                .pattern("#S ")
+                .pattern(" S ")
+                .define('#', ModItems.KYRIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_SHOVEL.get())
+                .pattern(" # ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('#', ModItems.KYRIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_HOE.get())
+                .pattern("## ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('#', ModItems.KYRIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_SWORD.get())
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" S ")
+                .define('#', ModItems.KYRIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KYRIUM_HELMET.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("   ")
+                .define('#', ModItems.KYRIUM.get())
+                .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KYRIUM_CHESTPLATE.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.KYRIUM.get())
+                .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KYRIUM_LEGGINGS.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.KYRIUM.get())
+                .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KYRIUM_BOOTS.get())
+                .pattern("# #")
+                .pattern("# #")
+                .pattern("   ")
+                .define('#', ModItems.KYRIUM.get())
                 .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
                 .save(pWriter);
 
