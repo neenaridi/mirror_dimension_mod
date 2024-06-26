@@ -9,6 +9,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -33,6 +34,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .define('S', ModItems.KYRIUM.get())
                 .unlockedBy(getHasName(ModItems.KYRIUM.get()), has(ModItems.KYRIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHROMIUM_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.CHROMIUM.get())
+                .unlockedBy(getHasName(ModItems.CHROMIUM.get()), has(ModItems.CHROMIUM.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KYRIUM_PICKAXE.get())
@@ -115,6 +124,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.KYRIUM.get(), 9)
                 .requires(ModBlocks.KYRIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.KYRIUM_BLOCK.get()), has(ModBlocks.KYRIUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHROMIUM.get(), 9)
+                .requires(ModBlocks.CHROMIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.CHROMIUM_BLOCK.get()), has(ModBlocks.CHROMIUM_BLOCK.get()))
                 .save(pWriter);
     }
 

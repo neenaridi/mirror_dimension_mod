@@ -16,9 +16,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.KYRIUM_BLOCK);
+        blockWithItem(ModBlocks.CHROMIUM_BLOCK);
 
         blockWithItem(ModBlocks.KYRIUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_KYRIUM_ORE);
+        blockWithItem(ModBlocks.CHROMIUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_CHROMIUM_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

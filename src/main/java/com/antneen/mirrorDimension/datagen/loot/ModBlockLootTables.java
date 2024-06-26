@@ -24,11 +24,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.KYRIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.CHROMIUM_BLOCK.get());
 
         this.add(ModBlocks.KYRIUM_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.KYRIUM_ORE.get(), ModItems.KYRIUM.get()));
         this.add(ModBlocks.DEEPSLATE_KYRIUM_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_KYRIUM_ORE.get(), ModItems.KYRIUM.get()));
+        this.add(ModBlocks.CHROMIUM_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.CHROMIUM_ORE.get(), ModItems.CHROMIUM.get()));
+        this.add(ModBlocks.DEEPSLATE_CHROMIUM_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_CHROMIUM_ORE.get(), ModItems.CHROMIUM.get()));
     }
 
     protected LootTable.Builder createDiamondLikeOreDrops(Block pBlock, Item item) {

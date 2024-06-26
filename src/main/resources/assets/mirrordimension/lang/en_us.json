@@ -1,9 +1,13 @@
 {
   "item.mirrordimension.kyrium": "Kyrium",
+  "item.mirrordimension.chromium": "Chromium",
 
   "block.mirrordimension.kyrium_ore": "Kyrium Ore",
   "block.mirrordimension.kyrium_block": "Kyrium Block",
   "block.mirrordimension.deepslate_kyrium_ore": "Deepslate Kyrium Ore",
+  "block.mirrordimension.chromium_ore": "Chromium Ore",
+  "block.mirrordimension.chromium_block": "Chromium Block",
+  "block.mirrordimension.deepslate_chromium_ore": "Deepslate Chromium Ore",
 
   "creativetab.mirror_tab": "Mirror Dimension Tab",
 

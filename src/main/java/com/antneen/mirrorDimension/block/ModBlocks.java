@@ -49,6 +49,31 @@ public class ModBlocks {
             UniformInt.of(3, 7))
     );
 
+    public static final RegistryObject<Block> CHROMIUM_BLOCK = registerBlock("chromium_block", () -> new Block(
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .requiresCorrectToolForDrops()
+                    .strength(4.0F, 5.0F)
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> CHROMIUM_ORE = registerBlock("chromium_ore", () -> new DropExperienceBlock(BlockBehaviour
+            .Properties.of()
+            .mapColor(MapColor.STONE)
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 3.0F)
+            .sound(SoundType.AMETHYST),
+            UniformInt.of(3, 7))
+    );
+
+    public static final RegistryObject<Block> DEEPSLATE_CHROMIUM_ORE = registerBlock("deepslate_chromium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour
+                    .Properties.of()
+                    .mapColor(MapColor.DEEPSLATE)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 3.0F)
+                    .sound(SoundType.AMETHYST),
+                    UniformInt.of(3, 7))
+    );
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
