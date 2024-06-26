@@ -23,8 +23,8 @@ public class ModPlacedFeatures {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, KYRIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_KYRIUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+                ModOrePlacement.commonOrePlacement(7,
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(20))));
 
     }
 

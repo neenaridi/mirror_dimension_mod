@@ -25,11 +25,11 @@ public class ModConfiguredFeatures {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
-        List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(OreConfiguration.target(stoneReplaceable,
+        List<OreConfiguration.TargetBlockState> overworldKyriumOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.KYRIUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_KYRIUM_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_KYRIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 9));
+        register(context, OVERWORLD_KYRIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldKyriumOres, 9));
 
     }
 
