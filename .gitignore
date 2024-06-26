@@ -17,6 +17,12 @@ out
 build
 .gradle
 
+# generated files
+run-data
+/src/generated/
+
+
+
 # other
 eclipse
 run
