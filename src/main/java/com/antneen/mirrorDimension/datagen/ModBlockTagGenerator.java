@@ -24,11 +24,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.KYRIUM_BLOCK.get(),
                         ModBlocks.KYRIUM_ORE.get(),
-                        ModBlocks.DEEPSLATE_KYRIUM_ORE.get());
+                        ModBlocks.DEEPSLATE_KYRIUM_ORE.get(),
+                        ModBlocks.CHROMIUM_BLOCK.get(),
+                        ModBlocks.CHROMIUM_ORE.get(),
+                        ModBlocks.DEEPSLATE_CHROMIUM_ORE.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.KYRIUM_BLOCK.get(),
-                ModBlocks.KYRIUM_ORE.get(),
-                ModBlocks.DEEPSLATE_KYRIUM_ORE.get());
+                    ModBlocks.KYRIUM_ORE.get(),
+                    ModBlocks.DEEPSLATE_KYRIUM_ORE.get());
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.CHROMIUM_BLOCK.get(),
+                    ModBlocks.CHROMIUM_ORE.get(),
+                    ModBlocks.DEEPSLATE_CHROMIUM_ORE.get());
     }
 }

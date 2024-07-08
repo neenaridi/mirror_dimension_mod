@@ -41,6 +41,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.KYRIUM);
+        simpleItem(ModItems.CHROMIUM);
 
         handheldItem(ModItems.KYRIUM_AXE);
         handheldItem(ModItems.KYRIUM_HOE);

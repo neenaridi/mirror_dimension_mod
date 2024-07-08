@@ -11,6 +11,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Mirror_Dimension.MODID);
 
     public static final RegistryObject<Item> KYRIUM = ITEMS.register("kyrium", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHROMIUM = ITEMS.register("chromium", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> KYRIUM_PICKAXE = ITEMS.register("kyrium_pickaxe",
             () -> new PickaxeItem(ModToolTiers.KYRIUM, 1, 0, new Item.Properties()));
@@ -31,7 +32,6 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.KYRIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> KYRIUM_BOOTS = ITEMS.register("kyrium_boots",
             () -> new ArmorItem(ModArmorMaterials.KYRIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
-
 
     public static void register(IEventBus eventBus){ ITEMS.register(eventBus); }
 }
