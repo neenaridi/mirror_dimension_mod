@@ -54,14 +54,14 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_PURPLE)
                     .requiresCorrectToolForDrops()
                     .strength(4.0F, 5.0F)
-                    .sound(SoundType.AMETHYST)));
+                    .sound(SoundType.COPPER)));
 
     public static final RegistryObject<Block> CHROMIUM_ORE = registerBlock("chromium_ore", () -> new DropExperienceBlock(BlockBehaviour
             .Properties.of()
             .mapColor(MapColor.STONE)
             .requiresCorrectToolForDrops()
             .strength(4.0F, 3.0F)
-            .sound(SoundType.AMETHYST),
+            .sound(SoundType.STONE),
             UniformInt.of(3, 7))
     );
 
@@ -71,7 +71,7 @@ public class ModBlocks {
                     .mapColor(MapColor.DEEPSLATE)
                     .requiresCorrectToolForDrops()
                     .strength(5.0F, 3.0F)
-                    .sound(SoundType.AMETHYST),
+                    .sound(SoundType.DEEPSLATE),
                     UniformInt.of(3, 7))
     );
 
