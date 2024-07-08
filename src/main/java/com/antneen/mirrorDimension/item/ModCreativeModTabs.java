@@ -19,10 +19,14 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.mirror_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.KYRIUM.get());
+                        pOutput.accept(ModItems.CHROMIUM.get());
 
                         pOutput.accept(ModBlocks.KYRIUM_ORE.get());
                         pOutput.accept(ModBlocks.KYRIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_KYRIUM_ORE.get());
+                        pOutput.accept(ModBlocks.CHROMIUM_ORE.get());
+                        pOutput.accept(ModBlocks.CHROMIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_CHROMIUM_ORE.get());
 
                         pOutput.accept(ModItems.KYRIUM_AXE.get());
                         pOutput.accept(ModItems.KYRIUM_PICKAXE.get());
